@@ -35,17 +35,26 @@ class Project extends Component {
 
 
 
-        return ( < div className = "Project" > {
+        return ( < div className = "Project" >
+            <
+            div className = 'container-fluid' >
+            <
+            div className = 'row' > {
                 overviews.map((view) => ( <
-                    div className = "ProjectItem"
-                    key = { view.id } > < br / >
+                    div className = "col-md-6"
+                    key = { view.id } >
                     <
-                    a href = '#' > <
-                    img src = { this.posterPath(view.poster_path) }
+                    a href = '#' > < img src = { this.posterPath(view.poster_path) }
                     alt = { view.title }
-                    /> </a > < br / > < p > { view.title } < /p>< /div >
+                    /> </a > < p > { view.title } < /p> < /
+                    div >
                 ))
-            } < /div>)
+            }
+
+            <
+            /
+            div > < /div>  <
+            /div>)
         }
     }
 
