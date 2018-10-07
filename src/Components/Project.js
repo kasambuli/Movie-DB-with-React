@@ -31,6 +31,7 @@ class Project extends Component {
         const poster = "https://image.tmdb.org/t/p/w500/";
         return poster + path
     }
+
     render() {
         var { overviews } = this.state
 
@@ -39,7 +40,6 @@ class Project extends Component {
         return ( < div className = "Project" >
             <div className = 'container-fluid' >
             <div className = 'row'> {overviews.map((view) => ( <div className = "col-md-6"key = { view.id } >
-                    <a href = '#' > < img src = { this.posterPath(view.poster_path) } alt = { view.title }/> </a > 
                     <p> { view.title } </p>  
                     </div >
                 ))
