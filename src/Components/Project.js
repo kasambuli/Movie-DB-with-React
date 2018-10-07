@@ -1,6 +1,7 @@
 import React, {
     Component
 } from 'react';
+import './Image.css';
 
 class Project extends Component {
     constructor() {
