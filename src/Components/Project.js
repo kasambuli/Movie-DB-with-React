@@ -40,6 +40,7 @@ class Project extends Component {
         return ( < div className = "Project" >
             <div className = 'container-fluid' >
             <div className = 'row'> {overviews.map((view) => ( <div className = "col-md-6"key = { view.id } >
+                    <a href = '#' > < img className="image-styling" src = { this.posterPath(view.poster_path) } alt = { view.title }/> </a > 
                     <p> { view.title } </p>  
                     </div >
                 ))
